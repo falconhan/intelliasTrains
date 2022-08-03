@@ -148,33 +148,33 @@ func FindTrains(departureStation, arrivalStation, criteria string) (Trains, erro
 }
 
 func PrintTrains(trains Trains) {
-	for _, train := range trains {
+	for _, tr := range trains {
 		fmt.Printf("{TrainID: %d, "+
 			"DepartureStationID: %d, "+
 			"ArrivalStationID: %d, "+
 			"Price: %.2f, "+
 			"ArrivalTime: time.Date(%d, time.%s, %d, %d, %d, %d, %d time.%s), "+
 			"DepartureTime: time.Date(%d, time.%s, %d, %d, %d, %d, %d time.%s)}\n",
-			train.TrainID,
-			train.DepartureStationID,
-			train.ArrivalStationID,
-			train.Price,
-			train.ArrivalTime.Year(),
-			train.ArrivalTime.Month().String(),
-			train.ArrivalTime.Day(),
-			train.ArrivalTime.Hour(),
-			train.ArrivalTime.Minute(),
-			train.ArrivalTime.Second(),
-			train.ArrivalTime.Nanosecond(),
-			train.ArrivalTime.Location(),
-			train.DepartureTime.Year(),
-			train.DepartureTime.Month().String(),
-			train.DepartureTime.Day(),
-			train.DepartureTime.Hour(),
-			train.DepartureTime.Minute(),
-			train.DepartureTime.Second(),
-			train.DepartureTime.Nanosecond(),
-			train.DepartureTime.Location())
+			tr.TrainID,
+			tr.DepartureStationID,
+			tr.ArrivalStationID,
+			tr.Price,
+			tr.ArrivalTime.Year(),
+			tr.ArrivalTime.Month().String(),
+			tr.ArrivalTime.Day(),
+			tr.ArrivalTime.Hour(),
+			tr.ArrivalTime.Minute(),
+			tr.ArrivalTime.Second(),
+			tr.ArrivalTime.Nanosecond(),
+			tr.ArrivalTime.Location(),
+			tr.DepartureTime.Year(),
+			tr.DepartureTime.Month().String(),
+			tr.DepartureTime.Day(),
+			tr.DepartureTime.Hour(),
+			tr.DepartureTime.Minute(),
+			tr.DepartureTime.Second(),
+			tr.DepartureTime.Nanosecond(),
+			tr.DepartureTime.Location())
 	}
 }
 
