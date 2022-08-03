@@ -134,6 +134,15 @@ func FindTrains(departureStation, arrivalStation, criteria string) (Trains, erro
 			filtered = append(filtered, tr)
 		}
 	}
+	
+	if len(filtered) == 0 {
+		return nil, nil
+	}
+
+	if len(filtered) > 3 {
+		filtered = filtered[:3]
+	}
+	
 	filtered.sortByCriteria(criteria)
 	return filtered[:3], nil
 }
