@@ -173,13 +173,13 @@ func main() {
 	var departureStation, arrivalStation, criteria string
 
 	fmt.Print("Departure station: ")
-	fmt.Scan(&departureStation)
+	fmt.Scanln(&departureStation)
 
 	fmt.Print("Arrival station: ")
-	fmt.Scan(&arrivalStation)
+	fmt.Scanln(&arrivalStation)
 
 	fmt.Print("Criteria: ")
-	fmt.Scan(&criteria)
+	fmt.Scanln(&criteria)
 
 	result, err := FindTrains(departureStation, arrivalStation, criteria)
 	if err != nil {
