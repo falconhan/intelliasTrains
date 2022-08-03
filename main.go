@@ -122,7 +122,7 @@ func FindTrains(departureStation, arrivalStation, criteria string) (Trains, erro
 	}
 
 	if arrStation < stationLimit {
-		return nil, badDepartureStationInput
+		return nil, badArrivalStationInput
 	}
 
 	if criteria != "price" && criteria != "arrival-time" && criteria != "departure-time" {
