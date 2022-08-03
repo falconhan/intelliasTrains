@@ -139,7 +139,7 @@ func FindTrains(departureStation, arrivalStation, criteria string) (Trains, erro
 		return nil, nil
 	}
 
-	if len(filtered) > 3 {
+	if len(filtered) > 2 {
 		filtered = filtered[:3]
 	}
 	
